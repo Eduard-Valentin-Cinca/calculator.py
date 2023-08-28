@@ -22,7 +22,7 @@ class Calculator:
         self.clear = tk.Button(
             self.frame,
             text='Clear',
-            font = ('Arial', 16, 'bold'),
+            font=('Arial', 16, 'bold'),
             bg='#11B0FA',
             activebackground='grey',
             activeforeground='red',
@@ -54,7 +54,6 @@ class Calculator:
             Calculator.expression += strng
             self.str_var.set(Calculator.expression)
 
-
     def add_numbers(self, btn_number):
         self.btn = tk.Button(self.button_frame,
                              text=btn_number,
@@ -66,7 +65,6 @@ class Calculator:
                              command=lambda: self.btn_click(btn_number)
                              )
         return self.btn
-
 
     def numbers_grid(self):
         NUMBERS = [
